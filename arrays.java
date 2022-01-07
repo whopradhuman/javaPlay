@@ -33,17 +33,17 @@ public class arrays {
 
         int[][] a2d = new int[2][3];
         a2d[1][1] = 5;
-        for(int i = 0; i < a2d.length; i++) {
-            for(int j = 0; j < a2d[0].length; j++) {
-                System.out.print(a2d[i][j] + " ");
+        for (int[] ints : a2d) {
+            for (int j = 0; j < a2d[0].length; j++) {
+                System.out.print(ints[j] + " ");
             }
             System.out.println();
         }
 
         String[][] a2d2 = {{"11", "12", "13"},{"21", "22", "23"}, {"31", "32", "33"}};
-        for(int i = 0; i < a2d2.length; i++) {
-            for(int j = 0; j < a2d2[0].length; j++) {
-                System.out.print(a2d2[i][j] + " ");
+        for (String[] strings : a2d2) {
+            for (int j = 0; j < a2d2[0].length; j++) {
+                System.out.print(strings[j] + " ");
             }
             System.out.println();
         }
@@ -51,7 +51,7 @@ public class arrays {
         // multi ends here
 
         int[] arr = {10,60,30,50,40,20};
-        System.out.println(Arrays.equals(b, b));
+//        System.out.println(Arrays.equals(b, b));
 
         Arrays.sort(arr);
         for(int x : arr) System.out.print(x + ", ");
